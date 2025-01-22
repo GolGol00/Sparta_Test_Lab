@@ -56,29 +56,28 @@ void AObjectActorSpawner::SpawnActor()
     // 스폰 타입에 따라 클래스 선택
     switch (SpawnType)
     {
-    case 1: // MoveActor
-    {
+        case 1: // MoveActor
+        {
+            SelectedClass = MoveActorClass;
+            AMoveActor* SpawnedActor = GetWorld()->SpawnActor<AMoveActor>(SelectedClass, SpawnLocation, SpawnRotation);
+            SpawnedActor->SetDirection(Direction);
+            SpawnedActor->SetMoveSpeed(Speed);
+            SpawnedActor->SetMoveDistance(Distance);
+        }
+            break;
 
-        SelectedClass = MoveActorClass;
-        AMoveActor* SpawnedActor = GetWorld()->SpawnActor<AMoveActor>(SelectedClass, SpawnLocation, SpawnRotation);
-        SpawnedActor->SetDirection(Direction);
-        SpawnedActor->SetMoveSpeed(Speed);
-        SpawnedActor->SetMoveDistance(Distance);
-    }
-        break;
+        case 2: // RotActor
+        {
+            SelectedClass = RotActorClass;
+            ARotActor* SpawnedActor = GetWorld()->SpawnActor<ARotActor>(SelectedClass, SpawnLocation, SpawnRotation);
+            SpawnedActor->SetDirection(Direction);
+            SpawnedActor->SetMoveSpeed(Speed);
+        }
+            break;
 
-    case 2: // RotActor
-    {
-        SelectedClass = RotActorClass;
-        ARotActor* SpawnedActor = GetWorld()->SpawnActor<ARotActor>(SelectedClass, SpawnLocation, SpawnRotation);
-        SpawnedActor->SetDirection(Direction);
-        SpawnedActor->SetMoveSpeed(Speed);
-    }
-        break;
-
-    default:
-        UE_LOG(LogTemp, Warning, TEXT("Invalid SpawnType!"));
-        return;
+        default:
+            UE_LOG(LogTemp, Warning, TEXT("Invalid SpawnType!"));
+            return;
     }
 
 }
