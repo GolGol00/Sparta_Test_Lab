@@ -13,5 +13,6 @@ UCLASS()
 class SPARTA_TEST_LAB_API ASpartaGameMode : public AGameMode
 {
 	GENERATED_BODY()
-	
+
+	ASpartaGameMode();
 };

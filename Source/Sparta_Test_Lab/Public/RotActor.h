@@ -15,6 +15,7 @@ public:
 	// Sets default values for this actor's properties
 	ARotActor();
 
+	
 	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "Architecture|Components")
 	USceneComponent* SceneRoot;
 
