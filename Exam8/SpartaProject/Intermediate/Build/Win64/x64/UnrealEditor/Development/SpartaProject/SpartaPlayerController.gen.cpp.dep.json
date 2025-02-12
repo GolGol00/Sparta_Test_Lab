@@ -1,0 +1,15 @@
+{
+    "Version": "1.2",
+    "Data": {
+        "Source": "c:\\users\\admin\\downloads\\20250207_exam08-main\\spartaproject\\intermediate\\build\\win64\\unrealeditor\\inc\\spartaproject\\uht\\spartaplayercontroller.gen.cpp",
+        "ProvidedModule": "",
+        "PCH": "c:\\users\\admin\\downloads\\20250207_exam08-main\\spartaproject\\intermediate\\build\\win64\\x64\\spartaprojecteditor\\development\\unrealed\\sharedpch.unrealed.project.valapi.cpp20.h.pch",
+        "Includes": [
+            "c:\\users\\admin\\downloads\\20250207_exam08-main\\spartaproject\\intermediate\\build\\win64\\x64\\unrealeditor\\development\\spartaproject\\definitions.spartaproject.h",
+            "c:\\users\\admin\\downloads\\20250207_exam08-main\\spartaproject\\source\\spartaproject\\public\\spartaplayercontroller.h",
+            "c:\\users\\admin\\downloads\\20250207_exam08-main\\spartaproject\\intermediate\\build\\win64\\unrealeditor\\inc\\spartaproject\\uht\\spartaplayercontroller.generated.h"
+        ],
+        "ImportedModules": [],
+        "ImportedHeaderUnits": []
+    }
+}
